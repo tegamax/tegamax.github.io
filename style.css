@@ -1,72 +1,329 @@
-/*
- First External CSS Stylesheet
- */
 
-/* Styling for HTML elements */
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
-  line-height: 150%;
-  color: #333;
-  background: #efeee7;
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 1% 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 1.2em;
+  background: white;
+  font-family: Oxygen;
 }
 
-header {
-  background: #333;
+
+.navbar-brand {
+  float: left;
+  min-height: 55px;
+  background-color: #fff;
+  color: black;
 }
 
-h1 {
-  padding: 20px 0;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #eee;
+.icon-bar {
+  background-color: black;
+}
+
+.navbar-nav a {
+  color: black;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus{
+  background-color: transparent;
+  color: #999999;
+}
+
+.nav-link {
+  color: black;
+}
+
+.index_img {
+  max-width: 100%;
+  height: auto;
+}
+
+.index_div {
+  /* border: solid;
+  border-width: 0.5px; */
+  text-align: center;
+  padding: 10px;
+}
+
+.title_div {
+  border: solid;
+  border-width: 0.5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.scary_div {
+  border: solid;
+  border-width: 0.5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.mars_div {
   text-align: center;
 }
 
-h2 {
-  font-size: 24px;
+.project_title {
+  text-align: center;
+  font-family: Oxygen;
 }
 
-a {
-  color: #d21034;
+.project_description {
+  text-align: center;
+  font-family: Oxygen;
 }
 
-/* Selecting elements by class */
-.container {
-  width: 1024px;
-  margin: 0 auto;
+.sub_project_description {
+  text-align: left;
+  padding-left:25px;
+  padding-right: 25px;
+  font-family: Oxygen;
 }
 
-/* Selecting elements by ID */
-#main-bio,
-#contact-info,
-#bio-image {
-  float: left;
+
+.code_btn {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  width: 115px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-#figure {
+.code_btn span {
+  cursor: pointer;
+  display: inline-block;
   position: relative;
+  transition: 0.5s;
 }
 
-#bio-name {
+.code_btn span:after {
+  content: '\00bb';
   position: absolute;
-  top: 150px;
-  left: 30px;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-#main-bio {
-  width: 70%;
+.code_btn:hover span {
+  padding-right: 25px;
 }
 
-#contact-info {
-  width: 30%;
+.code_btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+
+.built_with {
+  /* margin-left: 80px; */
+  font-family: Oxygen;
+  font-size: 18px;
+}
+
+.game_example {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.bold-list {
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+}
+.scary_img{
+  max-width: 55%;
+  height: auto;
+  padding: 3px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+.scary_img_border{
+  /* border: solid;
+  border-width: 0.5px;
+  border-color: gray; */
+  text-align: center;
+  padding: 10px;
+  /* margin-left: 65px;
+  margin-right: 65px; */
+}
+.scary_plot_title {
+  text-align: left;
+  font-family: Oxygen;
+  padding: 10px;
+  font-style: italic;
+}
+
+
+.scary_plot_description {
+  text-align: left;
+  font-family: Oxygen;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.mars_img_top, .music_img_top {
+  max-width: 80%;
+  height: auto;
+  padding: 3px;
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.mars_img_bottom, .music_img_bottom {
+  max-width: 80%;
+  height: auto;
+  padding: 3px;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.music_img_middle{
+  max-width: 80%;
+  height: auto;
+  padding: 3px;
+  border-left: solid;
+  border-right: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.news_plot_title {
+  text-align: left;
+  font-family: Oxygen;
+  padding: 10px;
+  font-style: italic;
+}
+
+.news_img{
+  max-width: 100%;
+  height: auto;
+  padding: 3px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.news_plot_description {
+  text-align: left;
+  font-family: Oxygen;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.news_img_border{
+  /* border: solid;
+  border-width: 0.5px;
+  border-color: gray; */
+  text-align: center;
+  padding: 10px;
+  /* margin-left: 65px;
+  margin-right: 65px; */
+}
+
+  .aboutme_img{
+    max-width: 100%;
+    height: auto;
+    }
+
+  .aboutme{
+    text-align: left;
+    font-family: Oxygen;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .block-content{
+    text-align: left;
+    font-family: Oxygen;
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  /* .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+} */
+
+.icon_color {
+  color: black;
+}
+
+.vividworknav {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0;
+  float: left;
+  padding: 0;
+  position: relative;
+  background-color: black;
+}
+
+.vividworknav:hover img {
+  opacity: 0.3;
+}
+
+.vividworknav:hover .work-text-content {
+  opacity: 1;
+}
+
+.vividworknav img {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  opacity: 1;
+  background-color: white;
+}
+
+.vividworknav img,
+.work-text-content {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.work-text-content {
+  position: absolute;
+  color: white;
+  left: 0;
+  top: 45%;
+  right: 0;
+  bottom: 0;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+  font-family: Oxygen;
+}
+
+.btn-success {
+  background-color: black;
+}
+
+.btn-send {
+  border-color: black;
 }

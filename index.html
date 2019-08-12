@@ -1,50 +1,183 @@
 <!DOCTYPE html>
-<!-- CSS Stylesheets with Relative Paths -->
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
-
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tega Ileleji</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_movement.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <header>
-    <h1>Student Bio</h1>
-  </header>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html"> Tega Ileleji </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" role="button" aria-haspopup="true" aria-expanded="false">
+              Work
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="Preview">
+              <li> <a class="dropdown-item" href="game.html">SET Card Game Image Recognition</a> </li>
+              <li> <a class="dropdown-item" href="music.html">Popular Music Insights</a> </li>
+              <li> <a class="dropdown-item" href="scary.html">Scary Author Identification</a> </li>
+              <li> <a class="dropdown-item" href="mars.html">Mars Web Scrape App</a> </li>
+              <li> <a class="dropdown-item" href="weather.html">Weather Data Analysis</a> </li>
+              <li> <a class="dropdown-item" href="news.html">News Sentiment Analysis</a> </li>
+              <li> <a class="dropdown-item" href="hawaii.html">Hawaii API</a> </li>
+              <li> <a class="dropdown-item" href="nbaplayers.html">NBA Players</a> </li>
+              <li> <a class="dropdown-item" href="portfolio.html">My Portfolio</a> </li>
+              
+            </ul>
+          </li>
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <!-- <h2 id="bio-name">Your Name</h2> -->
-        <img id="bio-image" src="5104144.jpeg" alt="Name is Tega">
-      </section>
-      <p>My Name is Tega Ileleji and I am a student of the coding bootcamp at UC Berkeley Extension.
-          My Technical skills include
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">About Me</a>
+          </li>
 
-          <br>TECHNICAL SKILLS
-          <br>* Programming: HTML, PHP, SQL, JavaScript, CSS, python, C, C++, Matlab, VHDL, Perl, PowerShell, Bash shell scripting.
-          <br>* Operating Systems: Wins 10 to 2005, Ms Server 2012, 2008, Mac Os, Asterisk, Kali Linux, Ubuntu, CentOS
-          <br>* Software: Cisco, Citrix, Juniper, Brocade, Cybersecurity tools, Azure, VMware, Wireshark, Eclipse,nmap, Hue, Tableau.
-          <br>* IT Infrastructure: Amazon AWS, AD/LDAP, VMware ESXi, Puppet CM, theForeMan, Nutanix Prism, Vagrant, MapReduce, Hadoop.
-          <br>* Hardware: Server installation, VDI-In-A-Box, SQL, Firewall, NTP, configure VLANs, BGP, MPLS and SAN Implementation
-          <br>* Protocols: RIP, OSPF, EIGRP, Layer 3 VPN, Spanning Tree, 802.11 a.b.g, 802.1q Tunneling, PAT, NAT, 2g,3g,4g & LTE
-      </p>
-    </section>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <aside id="contact-info">
-      <h2>Contact Info</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="#">tegaslink@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">tegamax</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">Updated</a></li>
-      </ul>
-    </aside>
-  </main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
 
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="game.html">
+              <img src="images/game.jpg" class= "index_img" alt="Old men playing game"/>
+            </a>
+              <div class="work-text-content">
+                <p>SET Card Game Image Recognition</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="scary.html">
+              <img src="images/author.jpg" class= "index_img" alt="Edgar Allen Poe"/>
+            </a>
+              <div class="work-text-content">
+                <p>Scary Author Identification</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="weather.html">
+              <img src="images/weather.jpg" class= "index_img" alt="Weather Map"/>
+            </a>
+              <div class="work-text-content">
+                <p>Weather Data Analysis</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="hawaii.html">
+              <img src="images/surfer.jpg"class= "index_img" alt="Surfer" />
+            </a>
+              <div class="work-text-content">
+                <p>Hawaii API</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="music.html">
+              <img src="images/concert.jpg" class= "index_img" alt="Concert"/>
+            </a>
+              <div class="work-text-content">
+                <p>Popular Music Insights</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="mars.html">
+              <img src="images/mars.jpg" class= "index_img" alt="Galaxy"/>
+            </a>
+              <div class="work-text-content">
+                <p>Mars Web Scrape App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="news.html">
+              <img src="images/news.jpg" class= "index_img" alt="News Boy"/>
+            </a>
+              <div class="work-text-content">
+                <p>News Sentiment Analysis</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="nbaplayers.html">
+              <img src="images/nbaplayers2.png" class= "index_img" alt="NBA Players"/>
+            </a>
+              <div class="work-text-content">
+                <p>NBA Players</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 index_div module">
+            <div class="vividworknav">
+              <a href="portfolio.html">
+              <img src="images/aboutme.jpg" alt="Dancer"/>
+            </a>
+              <div class="work-text-content">
+                <p>My Portfolio</p>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>
